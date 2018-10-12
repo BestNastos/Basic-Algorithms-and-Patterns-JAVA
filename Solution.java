@@ -15,6 +15,8 @@ public class Solution {
         float f = 1.7F;
         
         char c = 'c';
+        
+        boolean b = false;
 
     }
 }
