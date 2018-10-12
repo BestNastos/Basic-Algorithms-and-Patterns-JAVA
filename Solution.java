@@ -13,6 +13,8 @@ public class Solution {
         double d = 1.1;
 
         float f = 1.7F;
+        
+        char c = 'c';
 
     }
 }
