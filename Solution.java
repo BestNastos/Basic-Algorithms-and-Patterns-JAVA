@@ -19,6 +19,8 @@ public class Solution {
         boolean b = false;
         
         long l = 123;
+        
+        String s1 = "first branch";
 
     }
 }
