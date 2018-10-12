@@ -17,6 +17,8 @@ public class Solution {
         char c = 'c';
         
         boolean b = false;
+        
+        long l = 123;
 
     }
 }
