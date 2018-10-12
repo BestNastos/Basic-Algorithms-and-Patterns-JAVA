@@ -11,6 +11,8 @@ public class Solution {
 		String s = "Hi";
 	    
 	    	double d = 1.1;
+	    
+	    float f = 1.7F;
 
     }
 }
