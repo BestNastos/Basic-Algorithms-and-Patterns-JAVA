@@ -20,7 +20,7 @@ public class Solution {
         
         long l = 123;
         
-        String s1 = "first branch";
+        String s1 = "first branch. new commit in first branch";
 
     }
 }
