@@ -9,6 +9,8 @@ public class Solution {
 		int i = 5;
 		
 		String s = "Hi";
+	    
+	    	double d = 1.1;
 
     }
 }
