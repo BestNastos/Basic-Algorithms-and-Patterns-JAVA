@@ -14,7 +14,7 @@ public class AlgorithmTesting {
     public void bubbleSort() {
         int[] original = {4, 0, 88, 1563, -171};
         int[] expected = {-171, 0, 4, 88, 1563};
-        original = QA.Algorithms.bubbleSort(original);
+        original = Algorithms.bubbleSort(original);
         assertArrayEquals(expected, original);
     }
 
@@ -25,7 +25,7 @@ public class AlgorithmTesting {
 
         int[] original = {4, 0, 88, 1563, -171};
         int[] expected = {-171, 0, 4, 88, 1563};
-        original = QA.Algorithms.insertionSort(original);
+        original = Algorithms.insertionSort(original);
         assertArrayEquals(expected, original);
     }
 
@@ -37,7 +37,7 @@ public class AlgorithmTesting {
 
         int[] original = {4, 0, 88, 1563, -171};
         int[] expected = {-171, 0, 4, 88, 1563};
-        original = QA.Algorithms.selectionSort(original);
+        original = Algorithms.selectionSort(original);
         assertArrayEquals(expected, original);
     }
 
@@ -47,8 +47,8 @@ public class AlgorithmTesting {
     public void linearSearch() {
 
         int[] array = {5, 6, 77, -163, 1578};
-        assertTrue(QA.Algorithms.linearSearch(array, 77));
-        assertFalse(QA.Algorithms.linearSearch(array, -7));
+        assertTrue(Algorithms.linearSearch(array, 77));
+        assertFalse(Algorithms.linearSearch(array, -7));
     }
 
     // №5 Бинарный поиск
@@ -57,22 +57,22 @@ public class AlgorithmTesting {
     public void binarySearch() {
 
         int[] array = {5, 6, 77, -163, 1578};
-        assertTrue(QA.Algorithms.binarySearch(array, 77));
-        assertFalse(QA.Algorithms.binarySearch(array, -7));
+        assertTrue(Algorithms.binarySearch(array, 77));
+        assertFalse(Algorithms.binarySearch(array, -7));
     }
 
     // № 6 Фибоначчи: найти n-ное число
     @Test
     public void fibonacciNumber() {
 
-        assertEquals(21, QA.Algorithms.fibonacciNumber(8));
+        assertEquals(21, Algorithms.fibonacciNumber(8));
     }
 
     // № 7  Фибоначчи: найти n-ное число рекурсивно
     @Test
     public void fibonacciRecursive() {
 
-        assertEquals(21, QA.Algorithms.fibonacciRecursive(8));
+        assertEquals(21, Algorithms.fibonacciRecursive(8));
     }
 
     // № 8  Фибоначчи: вернуть последовательность в виде массива, где n - длина
@@ -80,28 +80,28 @@ public class AlgorithmTesting {
     public void fibonacciArray() {
 
         int[] array = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34};
-        assertArrayEquals(array, QA.Algorithms.fibonacciArray(10));
+        assertArrayEquals(array, Algorithms.fibonacciArray(10));
     }
 
     // № 9 Факториал (возвращаемое значение - int)
     @Test
     public void factorialInt() {
 
-        assertEquals(720, QA.Algorithms.factorialInt(6));
+        assertEquals(720, Algorithms.factorialInt(6));
     }
 
     // № 10 Факториал рекурсивно (возвращаемое значение - int)
     @Test
     public void factorialRecursive() {
 
-        assertEquals(720, QA.Algorithms.factorialRecursive(6));
+        assertEquals(720, Algorithms.factorialRecursive(6));
     }
 
     // № 11 Факториал (возвращаемое значение - BigInteger)
     @Test
     public void factorialBigInt() {
 
-        assertEquals(BigInteger.valueOf(720), QA.Algorithms.factorialBigInt(6));
+        assertEquals(BigInteger.valueOf(720), Algorithms.factorialBigInt(6));
     }
 
     // № 12  Перевернуть строку библиотечными методами
@@ -109,7 +109,7 @@ public class AlgorithmTesting {
     public void reverseViaMethod() {
 
         String original = "Hello World";
-        original = QA.Algorithms.reverseViaMethod(original);
+        original = Algorithms.reverseViaMethod(original);
         String expected = "dlroW olleH";
         assertEquals(original, expected);
     }
@@ -118,7 +118,7 @@ public class AlgorithmTesting {
     @Test
     public void reverseViaAlgorithm() {
         String original = "Hello World";
-        original = QA.Algorithms.reverseViaAlgorithm(original);
+        original = Algorithms.reverseViaAlgorithm(original);
         String expected = "dlroW olleH";
         assertEquals(original, expected);
     }
