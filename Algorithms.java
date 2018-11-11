@@ -208,4 +208,11 @@ public class Algorithms {
 
         return max;
     }
+
+    // №  15  Удалить символ из строки
+
+    public static String deleteCharFromString(String s, char c) {
+        if (s.isEmpty()) return "";
+        else return s.replace(Character.toString(c), "");
+    }
 }
