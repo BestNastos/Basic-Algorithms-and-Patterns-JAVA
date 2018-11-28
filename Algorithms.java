@@ -43,11 +43,11 @@ public class Algorithms {
 
     public static int[] selectionSort(int[] arr) {
 
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             int min = i;
 
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[i]) {
+                if (arr[j] < arr[min]) {
                     min = j;
                 }
             }
@@ -95,28 +95,26 @@ public class Algorithms {
 
     public static int fibonacciNumber(int n) {
 
-        if (n == 0) return 0;
-        else if (n < 3) return 1;
-
+        if (n < 2) return n;
+        
         int previous = 1;
         int current = 1;
-        int result = 0;
+        int next;
 
-        for (int i = 3; i <= n; i++) {
-            result = previous + current;
+        for (int i = 3; i < n; i++) {
+            next = previous + current;
             previous = current;
-            current = result;
+            current = next;
         }
-        return result;
+        return next;
     }
 
     // № 7  Фибоначчи: найти n-ное число рекурсивно
 
     public static int fibonacciRecursive(int n) {
 
-        if (n == 0) return 0;
-        else if (n < 3) return 1;
-
+        if (n < 2) return n;
+  
         return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
     }
 
