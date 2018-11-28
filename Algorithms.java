@@ -99,9 +99,8 @@ public class Algorithms {
         
         int previous = 1;
         int current = 1;
-        int next;
-
-        for (int i = 3; i < n; i++) {
+        int next = 0;
+        for (int i = 2; i < n; i++) {
             next = previous + current;
             previous = current;
             current = next;
