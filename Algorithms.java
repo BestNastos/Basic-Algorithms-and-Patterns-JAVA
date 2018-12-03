@@ -97,7 +97,7 @@ public class Algorithms {
 
         if (n < 2) return n;
         
-        int previous = 1;
+        int previous = 0;
         int current = 1;
         int next = 0;
         for (int i = 2; i < n; i++) {
@@ -105,7 +105,7 @@ public class Algorithms {
             previous = current;
             current = next;
         }
-        return next;
+        return current;
     }
 
     // № 7  Фибоначчи: найти n-ное число рекурсивно
