@@ -165,8 +165,8 @@ public class Algorithms {
 
     public static BigInteger factorialBigInt(int n) {
 
-        BigInteger result = new BigInteger("1");
-        if (n < 0) return new BigInteger("0");
+        if (n < 0) return BigInteger.valueOf(n);
+        BigInteger result = BigInteger.ONE;
         for (int i = 2; i <= n; i++) {
             result = result.multiply(BigInteger.valueOf(i));
         }
