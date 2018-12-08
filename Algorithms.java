@@ -100,7 +100,7 @@ public class Algorithms {
         int previous = 0;
         int current = 1;
         int next = 0;
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             next = previous + current;
             previous = current;
             current = next;
