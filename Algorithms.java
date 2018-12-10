@@ -212,4 +212,40 @@ public class Algorithms {
         if (s.isEmpty()) return "";
         else return s.replace(Character.toString(c), "");
     }
+    
+     // №  16  Является ли строка палиндромом
+    
+    public static boolean palindromeString(String s){
+
+        for (int i = 0; i < s.length()/2; i++) {
+            if (s.charAt(i) != s.charAt(s.length()-1-i)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+     // №  17  Является ли число палиндромом
+
+    public static boolean palindromeInt(int i){
+        
+            while (i > 9){
+
+            int lastDigit = i % 10;
+
+            int firstDigit = i;
+            int divider = 1;
+                
+            while (firstDigit > 9) {
+                firstDigit = firstDigit / 10;
+                divider = divider * 10;
+            }
+
+            if (firstDigit != lastDigit) return false;
+
+            i = i % divider;
+            if (i > 10) i = i / 10;
+        }
+        return true;
+    }
 }
