@@ -244,7 +244,7 @@ public class Algorithms {
             if (firstDigit != lastDigit) return false;
 
             i = i % divider;
-            if (i > 10) i = i / 10;
+            if (i > 9) i = i / 10;
         }
         return true;
     }
