@@ -158,7 +158,7 @@ public class Algorithms {
         if (n < 0) return n;
         else if (n < 2) return 1;
 
-        return n * fibonacciRecursive(n - 1);
+        return n * factorialRecursive(n - 1);
     }
 
     // № 11 Факториал (возвращаемое значение - BigInteger)
